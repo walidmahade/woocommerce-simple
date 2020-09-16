@@ -1,0 +1,32 @@
+/* Error: Undefined mixin.
+ *     ,
+ * 90  | /         @include breakpoint( ">782px" ) {
+ * 91  | |             .wc-block-radio-control__input {
+ * 92  | |                 height: 1rem;
+ * 93  | |                 margin-top: 2px;
+ * 94  | |                 min-height: 16px;
+ * 95  | |                 min-width: 16px;
+ * 96  | |                 width: 1rem;
+ * 97  | | 
+ * 98  | |                 &:checked::before {
+ * 99  | |                     height: 0.5em;
+ * 100 | |                     min-height: 8px;
+ * 101 | |                     min-width: 8px;
+ * 102 | |                     width: 0.5em;
+ * 103 | |                 }
+ * 104 | |             }
+ * 105 | \         }
+ *     '
+ *   _mixin.scss 90:3  radio-control-input-styles()
+ *   editor.scss 5:2   root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: Undefined mixin.\a     \2577 \a 90  \2502  \250c          @include breakpoint( ">782px" ) {\a 91  \2502  \2502              .wc-block-radio-control__input {\a 92  \2502  \2502                  height: 1rem;\a 93  \2502  \2502                  margin-top: 2px;\a 94  \2502  \2502                  min-height: 16px;\a 95  \2502  \2502                  min-width: 16px;\a 96  \2502  \2502                  width: 1rem;\a 97  \2502  \2502  \a 98  \2502  \2502                  &:checked::before {\a 99  \2502  \2502                      height: 0.5em;\a 100 \2502  \2502                      min-height: 8px;\a 101 \2502  \2502                      min-width: 8px;\a 102 \2502  \2502                      width: 0.5em;\a 103 \2502  \2502                  }\a 104 \2502  \2502              }\a 105 \2502  \2514          }\a     \2575 \a   _mixin.scss 90:3  radio-control-input-styles()\a   editor.scss 5:2   root stylesheet';
+}

@@ -1,0 +1,6 @@
+.woocommerce-product-gallery__image > a img {
+  display: block;
+  height: auto;
+  max-width: 340px;
+  margin: 0 auto;
+  margin-bottom: 50px; }

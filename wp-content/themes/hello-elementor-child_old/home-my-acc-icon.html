@@ -1,0 +1,102 @@
+<div class="my-acc-icon-wrap">
+    <div class="my-acc-icon">
+        <svg width="15" height="21" viewBox="0 0 15 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M7.47754 1.49554C8.21701 1.49554 8.93988 1.71481 9.55473 2.12564C10.1696 2.53647 10.6488 3.1204 10.9318 3.80358C11.2148 4.48677 11.2888 5.23852 11.1445 5.96379C11.0003 6.68905 10.6442 7.35525 10.1213 7.87813C9.59841 8.40102 8.93222 8.75711 8.20695 8.90137C7.48169 9.04564 6.72993 8.97159 6.04675 8.68861C5.36357 8.40563 4.77964 7.92641 4.36881 7.31156C3.95798 6.69671 3.7387 5.97385 3.7387 5.23437C3.7387 4.24277 4.13261 3.29178 4.83378 2.59062C5.53495 1.88945 6.48594 1.49554 7.47754 1.49554ZM7.47754 0C6.44228 0 5.43027 0.306991 4.56948 0.882151C3.70869 1.45731 3.03779 2.27481 2.64161 3.23127C2.24543 4.18772 2.14177 5.24018 2.34374 6.25555C2.54571 7.27092 3.04424 8.2036 3.77628 8.93564C4.50832 9.66768 5.441 10.1662 6.45636 10.3682C7.47173 10.5701 8.52419 10.4665 9.48065 10.0703C10.4371 9.67413 11.2546 9.00323 11.8298 8.14244C12.4049 7.28165 12.7119 6.26964 12.7119 5.23437C12.7119 3.84613 12.1604 2.51475 11.1788 1.53311C10.1972 0.551477 8.86578 0 7.47754 0Z"
+                fill="#373737" />
+            <path
+                d="M14.9554 20.9375H13.4598V17.1987C13.4598 16.7077 13.3631 16.2215 13.1752 15.7679C12.9873 15.3143 12.7119 14.9021 12.3647 14.5549C12.0176 14.2077 11.6054 13.9323 11.1518 13.7444C10.6982 13.5565 10.212 13.4598 9.72098 13.4598H5.23438C4.24277 13.4598 3.29178 13.8537 2.59062 14.5549C1.88945 15.2561 1.49554 16.2071 1.49554 17.1987V20.9375H0V17.1987C0 15.8104 0.551477 14.479 1.53311 13.4974C2.51475 12.5158 3.84613 11.9643 5.23438 11.9643H9.72098C11.1092 11.9643 12.4406 12.5158 13.4222 13.4974C14.4039 14.479 14.9554 15.8104 14.9554 17.1987V20.9375Z"
+                fill="#373737" /></svg>
+    </div>
+
+    <div class="my-acc-dropdown">
+        <a class="btn is-logged-out" href="/my-account">Sign In</a>
+        <a class="text-link is-logged-out" href="/my-account">New Customers</a>
+
+        <a class="text-link is-logged-in" href="/my-account">My Account</a>
+        <a class="text-link is-logged-in" href="/my-account">Orders</a>
+        <a class="text-link is-logged-in" href="/?customer-logout=true">Logout</a>
+    </div>
+</div>
+
+<style type="text/css">
+    .my-acc-icon-wrap {
+        position: relative;
+    }
+
+    .my-acc-icon-wrap:hover svg *,
+    .logged-in .my-acc-icon svg * {
+        fill: #9CAF86;
+        transition: all .3s ease-in-out;
+    }
+
+    .my-acc-icon {
+        cursor: pointer;
+    }
+
+    .my-acc-icon-wrap:hover .my-acc-dropdown {
+        opacity: 1;
+        visibility: visible;
+        top: 25px;
+        transition: all .2s ease-in-out;
+    }
+
+    .my-acc-dropdown {
+        position: absolute;
+        right: -20px;
+        background-color: #fff;
+        background: #FFFFFF;
+        box-shadow: 0px 6px 30px rgba(99, 99, 99, 0.12);
+        border-radius: 2px;
+        padding: 15px;
+        z-index: 9;
+        min-width: 180px;
+
+        opacity: 0;
+        visibility: hidden;
+        top: 60px;
+    }
+
+    .my-acc-dropdown a {
+        display: block;
+        text-align: center;
+    }
+
+    .my-acc-dropdown a.btn {
+        background: #9CAF86;
+        padding: 8px 20px;
+        text-align: center;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+        color: #FFFFFF;
+        margin-bottom: 10px;
+    }
+
+    .my-acc-dropdown a.btn:hover {
+        background-color: #434343;
+        color: #fff;
+    }
+
+    .my-acc-dropdown .text-link:hover {
+        text-decoration: underline;
+    }
+
+    .my-acc-dropdown .is-logged-out {
+        display: block;
+    }
+
+    .my-acc-dropdown .is-logged-in {
+        display: none;
+        text-align: left;
+    }
+
+    .logged-in .my-acc-dropdown .is-logged-out {
+        display: none;
+    }
+
+    .logged-in .my-acc-dropdown .is-logged-in {
+        display: block;
+    }
+</style>

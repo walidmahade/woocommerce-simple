@@ -1,0 +1,63 @@
+#cpsmw-container {
+  width: 100%;
+  height: 100%;
+}
+#cpsmw-container .swiper-slide img {
+  	transform: scale(.8);
+	max-width: 160%;
+	transition: ease-in-out .3s;
+}
+#cpsmw-container .swiper-slide.swiper-slide-active img {
+  transform: scale(1);
+}
+#cpsmw-container .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+#cpsmw-content {
+  text-align: center;
+  position: relative;
+  margin-top: 85px;
+}
+#cpsmw-content .cpsmw-slide-content {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+#cpsmw-content .cpsmw-slide-content.active {
+  position: relative;
+  opacity: 1;
+  visibility: visible;
+}
+#cpsmw-content .prod-title {
+  text-align: center;
+  padding: 10px;
+  display: inline;
+}
+#cpsmw-content .prod-description {
+  text-align: center;
+  margin: 30px auto;
+  max-width: 700px;
+	font-size: 18px;
+}
+
+/*# sourceMappingURL=custom.css.map */

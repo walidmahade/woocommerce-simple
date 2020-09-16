@@ -1,0 +1,113 @@
+/**
+ * My Account
+ */
+
+.woocommerce-account {
+  .woocommerce-MyAccount-navigation {
+    width: 100%;
+    text-align: center;
+    @media screen and (min-width: 769px) {
+      width: 20%;
+      text-align: left;
+    }
+  }
+
+  .woocommerce-MyAccount-content {
+    // display: inline-block;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    width: 94%;
+    margin-top: 30px;
+    @media screen and (min-width: 769px) {
+      float: left;
+      margin-left: 5%;
+      width: 75%;
+      margin-top: 0;
+    }
+  }
+
+  .woocommerce-MyAccount-navigation ul {
+    padding: 0;
+    border-top: 1px solid #eee;
+  }
+
+  .woocommerce-MyAccount-navigation ul li {
+    list-style: none;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 0;
+  }
+
+  .woocommerce-account
+    .woocommerce-MyAccount-navigation
+    ul
+    li.is-active
+    a:before {
+    opacity: 1;
+  }
+
+  .woocommerce-MyAccount-navigation ul li a {
+    padding: 10px 5px;
+    display: block;
+  }
+
+  .woocommerce-MyAccount-navigation ul li a:before {
+    margin-right: 20px;
+    opacity: 0.25;
+  }
+
+  .woocommerce-MyAccount-navigation ul li a:hover:before {
+    opacity: 1;
+  }
+
+  .woocommerce-MyAccount-content h2 {
+    font-size: 25px;
+    text-align: center;
+    font-weight: 600;
+  }
+
+  p.order-again {
+    text-align: right;
+  }
+
+  .woocommerce-EditAccountForm input[type="submit"] {
+    margin-top: 50px;
+    float: right;
+  }
+}
+// my acc page specific styles
+.woocommerce-form.woocommerce-form-register.register {
+}
+
+.woocommerce-privacy-policy-text {
+  margin-bottom: 10px;
+}
+
+// .edit-account {
+//   .woocommerce-Button {
+//   	padding-top: 15px;
+//     margin-top: 15px;
+//     display: inline-block;
+//   }
+// }
+.woocommerce-account {
+  button.woocommerce-Button.button {
+    margin-top: 15px;
+  }
+}
+
+.woocommerce table.my_account_orders .button {
+  white-space: nowrap;
+  margin: 5px;
+}
+
+.woocommerce-account .addresses .title {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+
+  &:before {
+    position: absolute;
+  }
+}
